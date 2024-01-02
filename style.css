@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 1rem 'Roboto', sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0, #2db0d1, #ccecf4);
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+button:focus {
+    outline: none;
+    border: solid 2px #fff;
+}
+
+.img-perfil {
+    width: 90%;
+    height: 100px;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil img {
+    width: 120px;
+    height: 120px;
+    
+    border-radius: 50%;
+
+}
+
+.social-icons {
+    width: 90%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icons ul {
+    list-style: none;
+
+}
+
+.social-icons ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-icons ul li img {
+    width: 35px;
+    height: 35px;
+}
+
+.social-links {
+    width: 80%;
+    height: auto;
+}
+
+.social-links ul {
+    list-style: none;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li button {
+    width: 100%;
+    height: 58px;
+
+    border-radius: 8px;
+
+    background: #ccecf4;
+    color: black;
+    font-size: 1.5rem;
+    
+    transition: baclground .3s;
+}
+
+.social-links ul li button:hover {
+    background-color: #b4c4cc;
+}
