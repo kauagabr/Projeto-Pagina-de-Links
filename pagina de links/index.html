@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauã Gabriel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background: rgb(230,222,220);
+            background: linear-gradient(0deg, rgba(230,222,220,1) 0%, rgba(230,169,131,1) 100%);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .link-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            padding: 10px;
+            margin: 15px auto;
+            background-color: #fff;
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-button:hover {
+            background-color: #fff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-button img {
+            position: absolute;
+            left: 15px;
+            width: 24px;
+            height: 24px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .link-button:hover img {
+            filter: grayscale(0%);
+        }
+
+        @media (max-width: 600px) {
+            .link-button {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Foto do perfil em formato circular -->
+    <img src="img.jpeg" alt="Sua foto" class="profile-image">
+
+    <h2>Kauã Gabriel</h2>
+    
+    <div class="container">
+        <a class="link-button" href="https://www.instagram.com/kaua7568?igsh=MXA5bGYzejYyajNxMg==" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"> Instagram
+        </a>
+        <a class="link-button" href="https://www.linkedin.com/in/kau%C3%A3gabrielsilva/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon"> LinkedIn
+        </a>
+        <a class="link-button" href="https://github.com/kauagabr" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Icon"> GitHub
+        </a>
+    </div>
+</body>
+</html>
